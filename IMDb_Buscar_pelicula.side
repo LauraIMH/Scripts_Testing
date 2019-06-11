@@ -1,0 +1,89 @@
+{
+  "id": "f040c70a-e673-4dbf-8023-5bb948779f15",
+  "version": "2.0",
+  "name": "Prueba",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "e8668883-c691-4d69-a435-e7ebe341db8b",
+    "name": "Buscar pelicula",
+    "commands": [{
+      "id": "0a868abf-dbc5-47c8-80b1-d3b75c333a5f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.imdb.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f79cca3c-2060-4ea9-8dc5-b9d8b462990c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a77cc37-a28b-41fd-a647-43d1fe527894",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66eaa811-b255-4c0c-9f9d-59a5156065ac",
+      "comment": "",
+      "command": "type",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "it"
+    }, {
+      "id": "28b83954-e46d-4eb9-b8c5-c1b53eb1631a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7f11d4c5-3b3e-47b3-858b-538de183333a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.findSection:nth-child(3) .even img",
+      "targets": [
+        ["css=.findSection:nth-child(3) .even img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://m.media-amazon.com/images/M/MV5BYjg1YTRkNzQtODgyYi00MTQ5LThiMDYtNDJjMWRjNTdjZDZlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX32_CR0,0,32,44_AL_.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='main']/div/div[2]/table/tbody/tr[2]/td/a/img", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5156d4e0-d752-4109-bc92-51b9b1e35e46",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e8668883-c691-4d69-a435-e7ebe341db8b"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}

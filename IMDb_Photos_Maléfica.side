@@ -1,0 +1,104 @@
+{
+  "id": "8b95cba9-91c5-4449-835f-d6c2f893fe7c",
+  "version": "2.0",
+  "name": "IMDb_Photos",
+  "url": "https://www.imdb.com/",
+  "tests": [{
+    "id": "787206b1-2542-4e14-bece-71c0bfdb3ee8",
+    "name": "Malefica_Misstres Evil",
+    "commands": [{
+      "id": "b69732c9-72db-43ac-8546-c914eaed95d1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.imdb.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "963e4230-36bd-4b4e-ba6b-b0c144b944ce",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "515d5e9b-6ad9-47c1-914d-0410857520e7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Photos",
+      "targets": [
+        ["linkText=Photos", "linkText"],
+        ["css=#navNameMenu a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Photos')]", "xpath:link"],
+        ["xpath=//li[@id='navNameMenu']/p/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gallery/rg1859820288?ref_=nv_tp_ph')]", "xpath:href"],
+        ["xpath=//li[4]/p/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Photos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36deeaac-52ba-4be9-aa7c-642d679ae726",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Next »",
+      "targets": [
+        ["linkText=Next »", "linkText"],
+        ["css=.media_index_pagination:nth-child(1) .prevnext", "css:finder"],
+        ["xpath=//a[contains(text(),'Next »')]", "xpath:link"],
+        ["xpath=//div[@id='right']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/gallery/rg1859820288?page=2&ref_=rgmi_mi_sm')])[2]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Next »')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "381a1815-2dad-4c12-8acb-8ac78d39a7ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(20) > img",
+      "targets": [
+        ["css=a:nth-child(20) > img", "css:finder"],
+        ["xpath=//img[@alt='Angelina Jolie in Maleficent: Mistress of Evil (2019)']", "xpath:img"],
+        ["xpath=//div[@id='media_index_thumbnail_grid']/a[20]/img", "xpath:idRelative"],
+        ["xpath=//a[20]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c736008f-cb0c-4a57-98e7-591bdae9eb74",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Maleficent: Mistress of Evil (2019)",
+      "targets": [
+        ["linkText=Maleficent: Mistress of Evil (2019)", "linkText"],
+        ["css=p > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Maleficent: Mistress of Evil (2019)')]", "xpath:link"],
+        ["xpath=//div[@id='photo-container']/div/span/div[2]/div/p/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/title/tt4777008/')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Maleficent: Mistress of Evil (2019)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9ea6733-e847-4e1d-b983-7d2a3feb336a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slate_button",
+      "targets": [
+        ["css=.slate_button", "css:finder"],
+        ["xpath=//div[@id='title-overview-widget']/div/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/video/imdb/vi2800270361?playlistId=tt4777008&ref_=tt_ov_vi')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6c65ef16-1aa2-4f46-8c5c-24d092e4880d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["787206b1-2542-4e14-bece-71c0bfdb3ee8"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}

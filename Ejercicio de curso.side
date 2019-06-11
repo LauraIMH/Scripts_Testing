@@ -1,0 +1,105 @@
+{
+  "id": "d38bd497-ab51-468b-98a5-36a3ace6f0ef",
+  "version": "2.0",
+  "name": "Ejercicio de curso",
+  "url": "http://200.77.226.6",
+  "tests": [{
+    "id": "fdb7cbe1-d963-4295-b29a-474b3efe8bd2",
+    "name": "Login_InBroker",
+    "commands": [{
+      "id": "c09ecd77-1ad0-4032-9d06-122567ef5fd5",
+      "comment": "",
+      "command": "open",
+      "target": "/InbrokerV5Web/Home/index.aspx?ReturnUrl=%2finbrokerV%Web",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1b80c72-e329-4980-9c2c-792396cc481e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ad87903-666f-4f11-9c82-a988cb24b432",
+      "comment": "",
+      "command": "click",
+      "target": "id=DefaultHeader_tfUser",
+      "targets": [
+        ["id=DefaultHeader_tfUser", "id"],
+        ["name=DefaultHeader_tfUser", "name"],
+        ["css=#DefaultHeader_tfUser", "css:finder"],
+        ["xpath=//input[@id='DefaultHeader_tfUser']", "xpath:attributes"],
+        ["xpath=//div[@id='ext-gen40']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfd9c939-d35f-4115-a286-d33789269059",
+      "comment": "",
+      "command": "type",
+      "target": "id=DefaultHeader_tfUser",
+      "targets": [
+        ["id=DefaultHeader_tfUser", "id"],
+        ["name=DefaultHeader_tfUser", "name"],
+        ["css=#DefaultHeader_tfUser", "css:finder"],
+        ["xpath=//input[@id='DefaultHeader_tfUser']", "xpath:attributes"],
+        ["xpath=//div[@id='ext-gen40']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "WEBTEST"
+    }, {
+      "id": "02b9458e-ce89-459f-b6cf-c61ba5825db6",
+      "comment": "",
+      "command": "click",
+      "target": "id=DefaultHeader_tfPass",
+      "targets": [
+        ["id=DefaultHeader_tfPass", "id"],
+        ["name=DefaultHeader_tfPass", "name"],
+        ["css=#DefaultHeader_tfPass", "css:finder"],
+        ["xpath=//input[@id='DefaultHeader_tfPass']", "xpath:attributes"],
+        ["xpath=//div[@id='ext-gen47']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed64f0cc-0eb6-42c1-a19b-6841a814c1f3",
+      "comment": "",
+      "command": "type",
+      "target": "id=DefaultHeader_tfPass",
+      "targets": [
+        ["id=DefaultHeader_tfPass", "id"],
+        ["name=DefaultHeader_tfPass", "name"],
+        ["css=#DefaultHeader_tfPass", "css:finder"],
+        ["xpath=//input[@id='DefaultHeader_tfPass']", "xpath:attributes"],
+        ["xpath=//div[@id='ext-gen47']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "aB12345678"
+    }, {
+      "id": "62b05d60-a8e1-4ee5-914c-d003aa486fd0",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=DefaultHeader_tfPass",
+      "targets": [
+        ["id=DefaultHeader_tfPass", "id"],
+        ["name=DefaultHeader_tfPass", "name"],
+        ["css=#DefaultHeader_tfPass", "css:finder"],
+        ["xpath=//input[@id='DefaultHeader_tfPass']", "xpath:attributes"],
+        ["xpath=//div[@id='ext-gen47']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "0ad5109c-201a-41ad-a7d3-5a81894b72ee",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fdb7cbe1-d963-4295-b29a-474b3efe8bd2"]
+  }],
+  "urls": ["http://200.77.226.6/"],
+  "plugins": []
+}
